@@ -7,6 +7,8 @@ import Logo from '@/public/img/igdblogo.png'
 import { FiMenu } from "react-icons/fi";
 import { CiSearch } from "react-icons/ci";
 import { GiGothicCross } from "react-icons/gi";
+import PlayList from "../playList/playlist";
+
 
 export default function Header() {
 
@@ -20,7 +22,7 @@ export default function Header() {
         inputes.current.value = ''
         SetCheckIsEmpty(false)
     }
-    
+
     return (
         <nav className="bg-[#1a1a1a]">
             <div className="px-6 py-5">
@@ -39,6 +41,7 @@ export default function Header() {
                             <GiGothicCross onClick={clearInput} className="absolute right-10 cursor-pointer top-2 size-6 transition-all" />
                         )}
                     </div>
+                    <PlayList />
                 </div>
             </div>
         </nav>
