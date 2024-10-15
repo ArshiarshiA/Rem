@@ -1,15 +1,15 @@
-import Header from "@/components/header/header";
 import DirectorSlider from "@/components/sliders/directorSlider/directorSlider";
 import EntryGameSlider from "@/components/sliders/EntrygameSlider/gameSlider";
 import GameIsArtSlider from "@/components/sliders/gameIsArtSlider/gameIsArtSlider";
 import { IconButton, Tooltip } from "@mui/material";
-import Link from "next/link";
 import { PiPaintBrush } from "react-icons/pi";
+import { FaAngleRight } from "react-icons/fa6";
+import Link from "next/link";
+import AllGameSlider from "@/components/sliders/allGameSlider/allGameSlider";
 
-export default function Page() {
+export default function Home() {
   return (
     <>
-      <Header />
       <main className="py-12 px-9">
         <div className="max-w-[1400px] m-auto flex gap-4">
           <div className="w-8/12">
@@ -37,6 +37,17 @@ export default function Page() {
           </div>
         </div>
       </main>
+      <section className="px-5">
+        <div className="max-w-[1400px] m-auto text-white">
+          <Link className="flex items-center text-4xl text-yellow-600 border-l-8 pl-3 w-fit" href={'/games'}>
+            All Games
+            <FaAngleRight />
+          </Link>
+          <div className="py-7">
+            <AllGameSlider />
+          </div>
+        </div>
+      </section>
     </>
   );
 }

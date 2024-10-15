@@ -13,7 +13,7 @@ import 'swiper/css/navigation'
 import './navi.css'
 
 export interface gamesObgData {
-    id: string,
+    id: number,
     art: boolean,
     title: string,
     image: string,
@@ -42,7 +42,7 @@ export default function EntryGameSlider() {
             loop={true}
         >
             {
-                gameListSlide?.map(item => (
+                gameListSlide?.filter(game => game.id <= 4).map(item => (
                     <SwiperSlide className="w-6/12 rounded-lg">
                         <div className="relative h-[450px]">
                             <div className="absolute top-0 left-0 text-white bg-[#49494970] rounded-lg">

@@ -1,9 +1,11 @@
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 import type { Metadata } from "next";
 import './global.css'
 
 export const metadata: Metadata = {
   title: "Rem",
-  description: "Rem , Rating , Emotional , Management",
+  description: "Rating Emotinal Method",
 };
 
 export default function RootLayout({
@@ -14,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-black">
+        <Header />
           {children}
+        <Footer />
       </body>
     </html>
   );
