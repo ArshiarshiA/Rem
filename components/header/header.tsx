@@ -25,9 +25,9 @@ export default function Header() {
 
     return (
         <nav className="bg-[#1a1a1a]">
-            <div className="px-6 py-5">
+            <div className="max-w-[1500px] m-auto px-6 py-5">
                 <div className="flex items-center gap-5 text-white">
-                    <a href="#">
+                    <a href="/">
                         <Image className="w-32 rounded-lg" src={Logo} alt="logo" />
                     </a>
                     <div className="flex items-center gap-1 cursor-pointer">

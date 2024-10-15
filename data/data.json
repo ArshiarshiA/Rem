@@ -1,5 +1,5 @@
 {
-    "games" : [
+    "EntryGames": [
         {
             "id": "1",
             "title": "alan wake2",
@@ -8,16 +8,94 @@
             "image": "https://readycomicsroll.com/wp-content/uploads/2024/07/alanwake2gamereview.png"
         },
         {
-            "id": "1",
-            "title": "wukong",
-            "rem": 8.9,
+            "id": "2",
+            "title": "Black Myth: Wukong",
+            "art": true,
+            "rem": 8.1,
             "image": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/08/black-myth-wukong-doesnt-want-streamers-talking-about-feminist-propaganda-or-covid.jpg"
         },
         {
-            "id": "1",
-            "title": "Red dead redemtion",
-            "rem": 8.9,
+            "id": "3",
+            "title": "Red dead redemtion2",
+            "art": true,
+            "rem": 9,
             "image": "https://images.ctfassets.net/wn7ipiv9ue5v/5JANuwUn7LTdXshdfMUIFD/98a046c496b39c89879b71b70e37c419/RDR_Hero_FPO.jpg"
+        },
+        {
+            "id": "4",
+            "title": "elden ring",
+            "art": true,
+            "rem": 8.8,
+            "image": "https://wallpapers.com/images/high/elden-ring-poster-6r85th0gnhifsqd0.webp"
+        },
+        {
+            "id": "5",
+            "title": "hades 2",
+            "art": false,
+            "rem": 7.2,
+            "image": "https://sm.ign.com/ign_pk/review/h/hades-2-ea/hades-2-early-access-review_p6z8.jpg"
+        }
+    ],
+    "directors": [
+        {
+            "id": 1,
+            "name": "Hideo Kojima",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Kojima_Death_Stranding_2018.jpg/640px-Kojima_Death_Stranding_2018.jpg",
+            "fieldes": [
+                "writer",
+                "Producer",
+                "Director"
+            ],
+            "work": [
+                "alane wake2" , "last of us 2" , "fallout4" , "elden ring"
+            ],
+            "bio": "Hideo Kojima was born August 24th, 1963 in Setagaya, Tokyo, later moving to Kobe and growing up there. His love of Americana gave him his major two interests of writing and creating film, which are the causes of why he is so well known today. During the mid 1980's, his interests pushed him to pursue looking for a career in film making, but a chance discovery of Nintendo's Entertainment System gave him an interest in videogames. Searching for a job at one of the many games companies in Japan, he ended up being",
+            "born": "1933"
+        },
+        {
+            "id": 2,
+            "name": "sam lake",
+            "image": "https://variety.com/wp-content/uploads/2023/12/Sam-Lake.png",
+            "fieldes": [
+                "writer",
+                "Producer",
+                "Director"
+            ],
+            "work": [
+                "alane wake2" , "last of us 2" , "fallout4" , "elden ring"
+            ],
+            "bio": "Hideo Kojima was born August 24th, 1963 in Setagaya, Tokyo, later moving to Kobe and growing up there. His love of Americana gave him his major two interests of writing and creating film, which are the causes of why he is so well known today. During the mid 1980's, his interests pushed him to pursue looking for a career in film making, but a chance discovery of Nintendo's Entertainment System gave him an interest in videogames. Searching for a job at one of the many games companies in Japan, he ended up being",
+            "born": "1970"
+        },
+        {
+            "id": 3,
+            "name": "Neil Druckmann",
+            "image": "https://ca-times.brightspotcdn.com/dims4/default/ac24d06/2147483647/strip/true/crop/5464x8192+0+0/resize/2160x3239!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F3b%2Fa7%2Fabbb56874e889ec03b5c49ddb9ff%2F1373823-la-power-list-neil-druckmann-cmh-01.jpg ",
+            "fieldes": [
+                "writer",
+                "Producer",
+                "Director"
+            ],
+            "work": [
+                "alane wake2" , "last of us 2" , "fallout4" , "elden ring"
+            ],
+            "bio": "Hideo Kojima was born August 24th, 1963 in Setagaya, Tokyo, later moving to Kobe and growing up there. His love of Americana gave him his major two interests of writing and creating film, which are the causes of why he is so well known today. During the mid 1980's, his interests pushed him to pursue looking for a career in film making, but a chance discovery of Nintendo's Entertainment System gave him an interest in videogames. Searching for a job at one of the many games companies in Japan, he ended up being",
+            "born": "1933"
+        },
+        {
+            "id": 4,
+            "name": "Todd Howard",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ToddHoward2010sm_%28cropped%29.jpg/1200px-ToddHoward2010sm_%28cropped%29.jpg",
+            "fieldes": [
+                "writer",
+                "Producer",
+                "Director"
+            ],
+            "work": [
+                "alane wake2" , "last of us 2" , "fallout4" , "elden ring"
+            ],
+            "bio": "Hideo Kojima was born August 24th, 1963 in Setagaya, Tokyo, later moving to Kobe and growing up there. His love of Americana gave him his major two interests of writing and creating film, which are the causes of why he is so well known today. During the mid 1980's, his interests pushed him to pursue looking for a career in film making, but a chance discovery of Nintendo's Entertainment System gave him an interest in videogames. Searching for a job at one of the many games companies in Japan, he ended up being",
+            "born": "1933"
         }
     ]
 }

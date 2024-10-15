@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar{
+  width: 0
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
