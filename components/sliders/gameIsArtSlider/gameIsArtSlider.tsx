@@ -23,6 +23,7 @@ export default function GameIsArtSlider() {
             autoplay
             loop={true}
             slidesPerView={3}
+            spaceBetween={20}
         >
             {
                 artGames?.filter(item => item.art === true)

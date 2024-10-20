@@ -6,6 +6,7 @@ import { PiPaintBrush } from "react-icons/pi";
 import { FaAngleRight } from "react-icons/fa6";
 import Link from "next/link";
 import AllGameSlider from "@/components/sliders/allGameSlider/allGameSlider";
+import GenresGameSlider from "@/components/sliders/genresSlider/genresSlider";
 
 export default function Home() {
   return (
@@ -14,17 +15,8 @@ export default function Home() {
         <div className="max-w-[1400px] m-auto flex gap-4">
           <div className="w-8/12">
             <EntryGameSlider></EntryGameSlider>
-            <div className="py-20">
-              <div className="flex justify-between items-center">
-                <h1 className="text-white font-extralight text-3xl">Game is art Games</h1>
-                <div className="bg-green-400 text-white px-3 rounded-md">
-                  <Tooltip title='GAME IS ART' >
-                    <IconButton>
-                      <PiPaintBrush size={30} />
-                    </IconButton>
-                  </Tooltip>
-                </div>
-              </div>
+            <div className="py-11">
+              <h1 className="text-white font-extralight text-3xl pl-2 border-l border-l-yellow-600">Game is art Games</h1>
               <GameIsArtSlider></GameIsArtSlider>
             </div>
           </div>
@@ -39,7 +31,16 @@ export default function Home() {
       </main>
       <section className="px-5">
         <div className="max-w-[1400px] m-auto text-white">
-          <Link className="flex items-center text-4xl text-yellow-600 border-l-8 pl-3 w-fit" href={'/games'}>
+          <Link className="flex items-center text-4xl border-l-8 border-l-yellow-600 pl-3 w-fit mb-5" href={'/games/genres'}>
+            Genres
+            <FaAngleRight />
+          </Link>
+          <GenresGameSlider></GenresGameSlider>
+        </div>
+      </section>
+      <section className="px-5 pt-32">
+        <div className="max-w-[1400px] m-auto text-white">
+          <Link className="flex items-center text-4xl border-l-8 border-l-yellow-600 pl-3 w-fit" href={'/games'}>
             All Games
             <FaAngleRight />
           </Link>

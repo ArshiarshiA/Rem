@@ -11,6 +11,7 @@ import Link from "next/link";
 import 'swiper/css'
 import 'swiper/css/navigation'
 import './navi.css'
+import useFetch from "@/hook/useFetch";
 
 export interface gamesObgData {
     id: number,
@@ -24,14 +25,7 @@ type gamesArray = gamesObgData[]
 
 export default function EntryGameSlider() {
 
-    let [gameListSlide, setGameListSlide] = useState<gamesArray | null>(null)
-
-    useEffect(() => {
-        axios
-            .get('http://localhost:3001/EntryGames')
-            .then(response => response.data)
-            .then(data => setGameListSlide(data));
-    }, [])
+    let gameListSlide = useFetch('EntryGames')
 
     return (
         <Swiper
@@ -68,7 +62,7 @@ export default function EntryGameSlider() {
                                     </div>
                                     <div className="">
                                         <div className="p-1 flex items-center">
-                                            <Link href={'/'}>See More</Link>
+                                            <Link href={`/games/${item.title}`}>See More</Link>
                                             <FaAngleRight />
                                         </div>
                                     </div>

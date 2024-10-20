@@ -18,12 +18,12 @@ export default function AllGameSlider() {
 
     return (
         <Swiper
-            slidesPerView={6}
+            slidesPerView={5}
             spaceBetween={20}
         >
             {allGames?.filter(game => game.id <= 15).map(
                 filteredGame => (
-                    <SwiperSlide className="bg-[#b6b6b62c] rounded-lg">
+                    <SwiperSlide className="border border-[#cecece2d]">
                         <GameCard {...filteredGame} />
                     </SwiperSlide>
                 )
