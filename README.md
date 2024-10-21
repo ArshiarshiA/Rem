@@ -24,4 +24,4 @@ The last step is to run the project:
 npm run dev
 ```
 
-# ENJOY :smiley:
+# ENJOY :smiley: !
