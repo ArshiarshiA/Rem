@@ -7,7 +7,7 @@ import { FaRegCopyright } from "react-icons/fa6";
 
 export default function Footer() {
     return (
-        <footer className='pt-20 pb-4'>
+        <footer className='pt-20'>
             <div className="text-white max-w-[800px] m-auto">
                 <div>
                     <a href="/">
@@ -48,9 +48,16 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
-            <div className='flex items-center justify-center gap-1 border-t border-t-gray-600 text-gray-600 p-2'>
-                <p>All right reserved for <span className='border-b border-b-yellow-600 text-yellow-600'>REM</span></p>
-                <FaRegCopyright />
+            <div className='border-t border-t-gray-600 text-gray-600 p-2'>
+                <div className='max-w-[900px] m-auto flex justify-between'>
+                    <div className='flex items-center gap-2'>
+                        <p>All right reserved for <span className='border-b border-b-yellow-600 text-yellow-600'>REM</span></p>
+                        <FaRegCopyright />
+                    </div>
+                    <div>
+                        <p>Developer : <a className='underline' href="https://github.com/ArshiarshiA">Arshia Mansury</a></p>
+                    </div>
+                </div>
             </div>
         </footer>
     )

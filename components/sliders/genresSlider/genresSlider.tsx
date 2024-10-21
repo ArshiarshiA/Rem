@@ -13,6 +13,7 @@ export default function GenresGameSlider() {
             <SwiperSlide><GameGenre title="survival" background="https://newxboxone.ru/wp-content/uploads/2023/03/sons-of-the-forest-.jpg" /></SwiperSlide>
             <SwiperSlide><GameGenre title="Action-adventure" background="https://image.api.playstation.com/vulcan/ap/rnd/202010/0205/dyvo9eGUf7WTZx49eTpQyDuL.png" /></SwiperSlide>
             <SwiperSlide><GameGenre title="Survival horror" background="https://theeliteinstitute.net/wp-content/uploads/2023/04/image_2023-04-17_111607059-1200x640.png" /></SwiperSlide>
+            <SwiperSlide><GameGenre title="adventure" background="https://images.gog-statics.com/ca20a040b7e7dbf11f954b4fa85e1ecdcf8f95eeba8ebf71f89455794eec80f2.jpg" /></SwiperSlide>
         </Swiper>
     )
 }

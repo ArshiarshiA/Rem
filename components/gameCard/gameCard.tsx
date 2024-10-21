@@ -4,13 +4,14 @@ import Link from "next/link";
 import { PiPaintBrush } from "react-icons/pi";
 
 interface gameCardProps {
+    id: number
     image: string,
     title: string,
     rem: number,
     art: boolean
 }
 
-export default function GameCard({ art, image, rem, title }: gameCardProps) {
+export default function GameCard({id , art, image, rem, title }: gameCardProps) {
     return (
         <div>
             <div>
@@ -30,7 +31,7 @@ export default function GameCard({ art, image, rem, title }: gameCardProps) {
                 <div className="py-2">
                     <p><span className="text-yellow-600">REM</span> : {rem}</p>
                 </div>
-                <Link className="w-full border-l border-l-yellow-600 pl-2 border-r border-r-yellow-600 pr-2" href={`/games/${title}`}>Detail</Link>
+                <Link className="w-full border-l border-l-yellow-600 pl-2 border-r border-r-yellow-600 pr-2" href={`/games/${id}`}>Detail</Link>
             </div>
         </div>
     )

@@ -32,7 +32,7 @@ export default function Genres() {
             <div className="text-white max-w-[1400px] m-auto">
                 <div className="relative">
                     <Image className="h-[500px] object-cover m-auto brightness-[0.3] rounded-xl" src={allGenreBackground} alt="allGenreBackground" />
-                    <h1 className="capitalize absolute w-full text-center top-20 text-6xl text-white">Browse all of your fav genre just in one page..!</h1>
+                    <h1 className="capitalize absolute w-full text-center top-32 text-6xl text-white">Browse all of your fav genre just in one page..!</h1>
                 </div>
                 <GenreSection title="shooter" selectedGenre="shooter" />
                 <GenreSection title="horror" selectedGenre="horror" />

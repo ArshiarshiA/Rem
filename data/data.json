@@ -6,7 +6,15 @@
             "art": true,
             "rem": 8.9,
             "image": "https://readycomicsroll.com/wp-content/uploads/2024/07/alanwake2gamereview.png",
-            "genres" : ["shooter" , "horror"]
+            "genres": [
+                "shooter",
+                "horror"
+            ],
+            "detail": {
+                "information": "13 years after bestselling writer Alan Wake went missing, a string of ritualistic murders occur in the town of Bright Falls, Washington. Saga Anderson, an FBI agent, is sent to Bright Falls to investigate the murders.",
+                "directors": "kojima",
+                "release": 2023
+            }
         },
         {
             "id": 2,
@@ -14,7 +22,14 @@
             "art": false,
             "rem": 8.1,
             "image": "https://esports.ch/wp-content/uploads/2024/08/kv-m-1536x1033.jpg",
-            "genres" : ["shooter"]
+            "genres": [
+                "shooter"
+            ],
+            "detail": {
+                "information": "lorem ipsum is",
+                "directors": "kojima",
+                "release": 2023
+            }
         },
         {
             "id": 3,
@@ -22,7 +37,14 @@
             "art": true,
             "rem": 9,
             "image": "https://images.ctfassets.net/wn7ipiv9ue5v/5JANuwUn7LTdXshdfMUIFD/98a046c496b39c89879b71b70e37c419/RDR_Hero_FPO.jpg",
-            "genres" : ["shooter"]
+            "genres": [
+                "shooter"
+            ],
+            "detail": {
+                "information": "lorem ipsum is",
+                "directors": "kojima",
+                "release": 2023
+            }
         },
         {
             "id": 4,
@@ -30,7 +52,14 @@
             "art": true,
             "rem": 8.8,
             "image": "https://wallpapers.com/images/high/elden-ring-poster-6r85th0gnhifsqd0.webp",
-            "genres" : ["shooter"]
+            "genres": [
+                "shooter"
+            ],
+            "detail": {
+                "information": "In a dark fantasy world created by Hidetaka Miyazaki (Dark Souls) and George R. R. Martin (A Song of Ice and Fire), the player is a Tarnished who is called back to the Lands Between to restore the Elden Ring and become the Elden Lord.",
+                "directors": "Hidetaka Miyazaki",
+                "release": 2022
+            }
         },
         {
             "id": 5,
@@ -38,7 +67,14 @@
             "art": false,
             "rem": 7.2,
             "image": "https://sm.ign.com/ign_pk/review/h/hades-2-ea/hades-2-early-access-review_p6z8.jpg",
-            "genres" : ["shooter"]
+            "genres": [
+                "shooter"
+            ],
+            "detail": {
+                "information": "lorem ipsum is",
+                "directors": "kojima",
+                "release": 2023
+            }
         },
         {
             "id": 6,
@@ -46,7 +82,14 @@
             "art": true,
             "rem": 7.2,
             "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000001369/3a41386d4b0999365727a21cc5c13853cfc244abca39b689bb79a339601e48c3",
-            "genres" : ["shooter"]
+            "genres": [
+                "shooter"
+            ],
+            "detail": {
+                "information": "lorem ipsum is",
+                "directors": "kojima",
+                "release": 2023
+            }
         },
         {
             "id": 7,
@@ -54,7 +97,14 @@
             "art": false,
             "rem": 7.9,
             "image": "https://fordhamobserver.com/wp-content/uploads/2023/04/maxresdefault.jpeg",
-            "genres" : ["horror"]
+            "genres": [
+                "horror"
+            ],
+            "detail": {
+                "information": "lorem ipsum is",
+                "directors": "kojima",
+                "release": 2023
+            }
         },
         {
             "id": 8,
@@ -62,7 +112,14 @@
             "art": false,
             "rem": 7.2,
             "image": "https://sm.ign.com/ign_pk/review/h/hades-2-ea/hades-2-early-access-review_p6z8.jpg",
-            "genres" : ["fantasy"]
+            "genres": [
+                "fantasy"
+            ],
+            "detail": {
+                "information": "lorem ipsum is",
+                "directors": "kojima",
+                "release": 2023
+            }
         },
         {
             "id": 9,
@@ -70,7 +127,14 @@
             "art": false,
             "rem": 7.2,
             "image": "https://image.api.playstation.com/vulcan/ap/rnd/202401/2910/3cb17e8780924be93de73d4b6b81e3309f69d24137c02d54.jpg",
-            "genres" : ["horror"]
+            "genres": [
+                "horror"
+            ],
+            "detail": {
+                "information": "lorem ipsum is",
+                "directors": "kojima",
+                "release": 2023
+            }
         },
         {
             "id": 10,
@@ -78,7 +142,14 @@
             "art": false,
             "rem": 7.2,
             "image": "https://static.bandainamcoent.eu/high/little-nightmares/little-nightmares-2/00-page-setup/ln2_game-thumbnail.jpg",
-            "genres" : ["horror"]
+            "genres": [
+                "horror"
+            ],
+            "detail": {
+                "information": "lorem ipsum is",
+                "directors": "kojima",
+                "release": 2023
+            }
         },
         {
             "id": 11,
@@ -86,7 +157,14 @@
             "art": false,
             "rem": 7.2,
             "image": "https://cdn.sortiraparis.com/images/80/66131/1104437-silent-hill-2-nouvelle-bande-annonce-pour-le-remake-du-jeu-de-konami.jpg",
-            "genres" : ["horror"]
+            "genres": [
+                "horror"
+            ],
+            "detail": {
+                "information": "lorem ipsum is",
+                "directors": "kojima",
+                "release": 2023
+            }
         }
     ],
     "directors": [
@@ -100,7 +178,10 @@
                 "Director"
             ],
             "work": [
-                "alane wake2" , "last of us 2" , "fallout4" , "elden ring"
+                "alane wake2",
+                "last of us 2",
+                "fallout4",
+                "elden ring"
             ],
             "bio": "Hideo Kojima was born August 24th, 1963 in Setagaya, Tokyo, later moving to Kobe and growing up there. His love of Americana gave him his major two interests of writing and creating film, which are the causes of why he is so well known today. During the mid 1980's, his interests pushed him to pursue looking for a career in film making, but a chance discovery of Nintendo's Entertainment System gave him an interest in videogames. Searching for a job at one of the many games companies in Japan, he ended up being",
             "born": "1933"
@@ -115,7 +196,10 @@
                 "Director"
             ],
             "work": [
-                "alane wake2" , "last of us 2" , "fallout4" , "elden ring"
+                "alane wake2",
+                "last of us 2",
+                "fallout4",
+                "elden ring"
             ],
             "bio": "Hideo Kojima was born August 24th, 1963 in Setagaya, Tokyo, later moving to Kobe and growing up there. His love of Americana gave him his major two interests of writing and creating film, which are the causes of why he is so well known today. During the mid 1980's, his interests pushed him to pursue looking for a career in film making, but a chance discovery of Nintendo's Entertainment System gave him an interest in videogames. Searching for a job at one of the many games companies in Japan, he ended up being",
             "born": "1970"
@@ -130,7 +214,10 @@
                 "Director"
             ],
             "work": [
-                "alane wake2" , "last of us 2" , "fallout4" , "elden ring"
+                "alane wake2",
+                "last of us 2",
+                "fallout4",
+                "elden ring"
             ],
             "bio": "Hideo Kojima was born August 24th, 1963 in Setagaya, Tokyo, later moving to Kobe and growing up there. His love of Americana gave him his major two interests of writing and creating film, which are the causes of why he is so well known today. During the mid 1980's, his interests pushed him to pursue looking for a career in film making, but a chance discovery of Nintendo's Entertainment System gave him an interest in videogames. Searching for a job at one of the many games companies in Japan, he ended up being",
             "born": "1933"
@@ -145,7 +232,10 @@
                 "Director"
             ],
             "work": [
-                "alane wake2" , "last of us 2" , "fallout4" , "elden ring"
+                "alane wake2",
+                "last of us 2",
+                "fallout4",
+                "elden ring"
             ],
             "bio": "Hideo Kojima was born August 24th, 1963 in Setagaya, Tokyo, later moving to Kobe and growing up there. His love of Americana gave him his major two interests of writing and creating film, which are the causes of why he is so well known today. During the mid 1980's, his interests pushed him to pursue looking for a career in film making, but a chance discovery of Nintendo's Entertainment System gave him an interest in videogames. Searching for a job at one of the many games companies in Japan, he ended up being",
             "born": "1933"

@@ -5,7 +5,7 @@ interface genresData {
     background: string
 }
 
-export default function GameGenre({ title, background }: genresData) {
+export default function GameGenre({title, background }: genresData) {
     return (
         <div className="rounded-2xl">
             <Link href={`/games/genres/${title}`}>

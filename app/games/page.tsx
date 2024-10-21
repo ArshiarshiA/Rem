@@ -1,11 +1,11 @@
 "use client"
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import axios from "axios"
 import { gamesObgData } from "@/components/sliders/EntrygameSlider/gameSlider"
 import { IconButton, Tooltip } from "@mui/material"
 import { PiPaintBrush } from "react-icons/pi";
-import axios from "axios"
-import { IoAddOutline } from "react-icons/io5";
+import { CiBookmark } from "react-icons/ci";
 
 export default function Games() {
 
@@ -38,17 +38,13 @@ export default function Games() {
                                 )}
                             </div>
                             <div className="py-2 px-2">
+                                <h1 className="my-2 text-lg capitalize">{game.title}</h1>
                                 <div>
                                     <p><span className="text-yellow-600">REM</span> : {game.rem}</p>
                                 </div>
-                                <h1 className="my-2 text-lg capitalize">{game.title}</h1>
                                 <div className="flex items-center justify-between">
-                                    <Link className="border-l border-l-yellow-600 pl-2 border-r border-r-yellow-600 pr-2" href={`/games/${game.title}`}>Deatail</Link>
-                                    <Tooltip title='add to your play list' >
-                                        <IconButton>
-                                            <IoAddOutline size={25} className="cursor-pointer text-white" />
-                                        </IconButton>
-                                    </Tooltip>
+                                    <Link className="border-l border-l-yellow-600 pl-2 border-r border-r-yellow-600 pr-2" href={`/games/${game.id}`}>Deatail</Link>
+                                    <CiBookmark size={25} className="cursor-pointer text-white" />
                                 </div>
                             </div>
                         </div>

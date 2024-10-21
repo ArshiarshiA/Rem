@@ -35,7 +35,7 @@ export default function DirectorSlider() {
                                 ))}
                             </div>
                         </div>
-                        <button className='bg-yellow-600 p-1 mt-4 w-fit rounded-lg text-black'>
+                        <button className='bg-yellow-600 p-1 mt-4 w-fit rounded-sm text-black'>
                             <Link href={`/directors/${item.name}`}>know more</Link>
                         </button>
                     </div>

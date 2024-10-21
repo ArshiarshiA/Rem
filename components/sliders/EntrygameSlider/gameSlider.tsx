@@ -36,7 +36,7 @@ export default function EntryGameSlider() {
             loop={true}
         >
             {
-                gameListSlide?.filter(game => game.id <= 4).map(item => (
+                gameListSlide?.filter(game => Number(game.id) <= 4).map(item => (
                     <SwiperSlide className="w-6/12 rounded-lg">
                         <div className="relative h-[450px]">
                             <div className="absolute top-0 left-0 text-white bg-[#49494970] rounded-lg">
@@ -62,7 +62,7 @@ export default function EntryGameSlider() {
                                     </div>
                                     <div className="">
                                         <div className="p-1 flex items-center">
-                                            <Link href={`/games/${item.title}`}>See More</Link>
+                                            <Link href={`/games/${item.id}`}>See More</Link>
                                             <FaAngleRight />
                                         </div>
                                     </div>

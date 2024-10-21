@@ -5,8 +5,9 @@ import { useEffect, useState } from "react";
 import { FaAngleRight } from "react-icons/fa6";
 import { MdStarOutline } from "react-icons/md";
 import { SwiperSlide, Swiper } from "swiper/react";
+import { CiBookmark } from "react-icons/ci";
 
-interface IGameGenreType{
+interface IGameGenreType {
     title: string,
     selectedGenre: string
 }
@@ -21,7 +22,7 @@ interface allGamesData {
 
 type allGamesType = allGamesData[]
 
-export default function GenreSection({title , selectedGenre}:IGameGenreType) {
+export default function GenreSection({ title, selectedGenre }: IGameGenreType) {
 
     let [allGames, setAllGames] = useState<allGamesType | null>(null)
 
@@ -34,7 +35,7 @@ export default function GenreSection({title , selectedGenre}:IGameGenreType) {
 
     return (
         <div className="py-10">
-            <Link className="flex items-center text-4xl border-l-4 border-l-yellow-600 pl-3 w-fit mb-5" href={'/games/genres/shooter'}>
+            <Link className="flex items-center text-4xl border-l-4 border-l-yellow-600 pl-3 w-fit mb-5" href={`/games/genres/${title}`}>
                 {title}
                 <FaAngleRight />
             </Link>
@@ -54,7 +55,10 @@ export default function GenreSection({title , selectedGenre}:IGameGenreType) {
                                             <MdStarOutline className="text-yellow-600" size={20} />
                                             {filteredGame.rem}
                                         </div>
-                                        <Link className="mt-2 px-2 border-r border-r-yellow-600 border-l border-l-yellow-600" href={`/games/${filteredGame.title}`}>Detail</Link>
+                                        <div className="flex items-center justify-between">
+                                            <Link className="mt-2 px-2 border-r border-r-yellow-600 border-l border-l-yellow-600" href={`/games/${filteredGame.id}`}>Detail</Link>
+                                            <CiBookmark size={25} className="cursor-pointer text-white" />
+                                        </div>
                                     </div>
                                 </div>
                             </SwiperSlide>

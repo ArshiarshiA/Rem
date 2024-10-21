@@ -1,8 +1,6 @@
 import DirectorSlider from "@/components/sliders/directorSlider/directorSlider";
 import EntryGameSlider from "@/components/sliders/EntrygameSlider/gameSlider";
 import GameIsArtSlider from "@/components/sliders/gameIsArtSlider/gameIsArtSlider";
-import { IconButton, Tooltip } from "@mui/material";
-import { PiPaintBrush } from "react-icons/pi";
 import { FaAngleRight } from "react-icons/fa6";
 import Link from "next/link";
 import AllGameSlider from "@/components/sliders/allGameSlider/allGameSlider";
@@ -16,7 +14,7 @@ export default function Home() {
           <div className="w-8/12">
             <EntryGameSlider></EntryGameSlider>
             <div className="py-11">
-              <h1 className="text-white font-extralight text-3xl pl-2 border-l border-l-yellow-600">Game is art Games</h1>
+              <h1 className="text-white font-extralight text-3xl pl-2 border-l border-l-green-600">Game is art Games</h1>
               <GameIsArtSlider></GameIsArtSlider>
             </div>
           </div>

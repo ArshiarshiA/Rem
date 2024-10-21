@@ -29,7 +29,7 @@ export default function GameIsArtSlider() {
                 artGames?.filter(item => item.art === true)
                     .map(art => (
                         <SwiperSlide>
-                            <Link href={`/games/${art.title}`}>
+                            <Link href={`/games/${art.id}`}>
                                 <div className="w-fit py-9">
                                     <div className="text-white uppercase">
                                         <img className="w-52 h-52 object-cover rounded-full" src={art.image} alt="" />
