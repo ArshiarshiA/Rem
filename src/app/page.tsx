@@ -1,10 +1,10 @@
-import DirectorSlider from "@/components/sliders/directorSlider/directorSlider";
-import EntryGameSlider from "@/components/sliders/EntrygameSlider/gameSlider";
-import GameIsArtSlider from "@/components/sliders/gameIsArtSlider/gameIsArtSlider";
+import DirectorSlider from "@/src/components/sliders/directorSlider/directorSlider";
+import EntryGameSlider from "@/src/components/sliders/EntrygameSlider/gameSlider";
+import GameIsArtSlider from "@/src/components/sliders/gameIsArtSlider/gameIsArtSlider";
 import { FaAngleRight } from "react-icons/fa6";
 import Link from "next/link";
-import AllGameSlider from "@/components/sliders/allGameSlider/allGameSlider";
-import GenresGameSlider from "@/components/sliders/genresSlider/genresSlider";
+import AllGameSlider from "@/src/components/sliders/allGameSlider/allGameSlider";
+import GenresGameSlider from "@/src/components/sliders/genresSlider/genresSlider";
 
 export default function Home() {
   return (

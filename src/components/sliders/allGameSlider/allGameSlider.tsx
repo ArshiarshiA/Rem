@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { gamesObgData } from "../EntrygameSlider/gameSlider";
-import GameCard from "@/components/gameCard/gameCard";
+import GameCard from "@/src/components/gameCard/gameCard";
 import axios from "axios";
 
 export default function AllGameSlider() {

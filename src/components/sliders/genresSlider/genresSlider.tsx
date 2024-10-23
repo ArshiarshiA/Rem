@@ -1,5 +1,5 @@
 'use client'
-import GameGenre from "@/components/gameGenre/gameGenre";
+import GameGenre from "@/src/components/gameGenre/gameGenre";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function GenresGameSlider() {

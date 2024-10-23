@@ -3,6 +3,7 @@
 The first step is to enter the data directory:
 
 ```bash
+cd src
 cd data
 ```
 
@@ -15,6 +16,7 @@ npx json-server data.json --port 3001
 The next step is to return to the root path of the project:
 
 ```bash
+cd ..
 cd ..
 ```
 

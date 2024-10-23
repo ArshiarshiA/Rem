@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import axios from "axios"
-import { gamesObgData } from "@/components/sliders/EntrygameSlider/gameSlider"
+import { gamesObgData } from "@/src/components/sliders/EntrygameSlider/gameSlider"
 import { IconButton, Tooltip } from "@mui/material"
 import { PiPaintBrush } from "react-icons/pi";
 import { CiBookmark } from "react-icons/ci";

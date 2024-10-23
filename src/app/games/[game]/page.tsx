@@ -1,6 +1,6 @@
 "use client"
-import DetailGameCard from "@/components/detailGameCard/detailGameCard";
-import useFetch from "@/hook/useFetch"
+import DetailGameCard from "@/src/components/detailGameCard/detailGameCard";
+import useFetch from "@/src/hook/useFetch"
 import Link from "next/link";
 
 export default function GameInfoPage({ params }: { params: { game: string } }) {

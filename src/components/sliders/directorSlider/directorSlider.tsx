@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link';
-import useFetch from '@/hook/useFetch';
+import useFetch from '@/src/hook/useFetch';
 
 interface directorsData {
     id: number

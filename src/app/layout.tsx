@@ -1,5 +1,5 @@
-import Header from "@/components/header/header";
-import Footer from "@/components/footer/footer";
+import Header from "@/src/components/header/header";
+import Footer from "@/src/components/footer/footer";
 import type { Metadata } from "next";
 import './global.css'
 

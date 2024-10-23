@@ -11,7 +11,7 @@ import Link from "next/link";
 import 'swiper/css'
 import 'swiper/css/navigation'
 import './navi.css'
-import useFetch from "@/hook/useFetch";
+import useFetch from "@/src/hook/useFetch";
 
 export interface gamesObgData {
     id: number,

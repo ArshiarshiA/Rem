@@ -1,7 +1,7 @@
 "use client"
 import axios from "axios";
 import { useEffect, useState } from "react";
-import GenreSection from "@/components/genreSection/genreSection";
+import GenreSection from "@/src/components/genreSection/genreSection";
 import Image from "next/image";
 import allGenreBackground from '@/public/img/allGameGenre.jpg'
 
