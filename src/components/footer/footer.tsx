@@ -1,4 +1,4 @@
-import logo from '../../public/img/igdblogo.png'
+import logo from '@/public/img/igdblogo.png'
 import Link from "next/link"
 import Image from "next/image"
 import { FaInstagram } from "react-icons/fa"

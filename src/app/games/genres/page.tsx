@@ -1,6 +1,3 @@
-"use client"
-import axios from "axios";
-import { useEffect, useState } from "react";
 import GenreSection from "@/src/components/genreSection/genreSection";
 import Image from "next/image";
 import allGenreBackground from '@/public/img/allGameGenre.jpg'
@@ -16,17 +13,6 @@ interface allGamesData {
 type allGamesType = allGamesData[]
 
 export default function Genres() {
-
-    let [allGames, setAllGames] = useState<allGamesType | null>(null)
-
-    useEffect(() => {
-        axios
-            .get('http://localhost:3001/EntryGames')
-            .then(response => response.data)
-            .then(data => setAllGames(data))
-    }, [])
-
-
     return (
         <section className="p-10">
             <div className="text-white max-w-[1400px] m-auto">
