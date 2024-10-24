@@ -19,10 +19,16 @@ export default function GameIsArtSlider() {
 
     return (
         <Swiper
-            modules={[Autoplay]}
-            autoplay
+            breakpoints={{
+                600:{
+                    slidesPerView: 3
+                },
+                500:{
+                    slidesPerView: 2
+                }
+            }}
             loop={true}
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={20}
         >
             {
@@ -30,9 +36,9 @@ export default function GameIsArtSlider() {
                     .map(art => (
                         <SwiperSlide>
                             <Link href={`/games/${art.id}`}>
-                                <div className="w-fit py-9">
+                                <div className="py-9">
                                     <div className="text-white uppercase">
-                                        <img className="w-52 h-52 object-cover rounded-full" src={art.image} alt="" />
+                                        <img className="w-52 h-52 object-cover rounded-full max-[500px]:rounded-xl max-[500px]:w-full" src={art.image} alt="" />
                                         <div className="text-center pt-3">
                                             <h1>{art.title}</h1>
                                         </div>

@@ -12,7 +12,7 @@
             ],
             "detail": {
                 "information": "13 years after bestselling writer Alan Wake went missing, a string of ritualistic murders occur in the town of Bright Falls, Washington. Saga Anderson, an FBI agent, is sent to Bright Falls to investigate the murders.",
-                "directors": "kojima",
+                "directors": "sam lake",
                 "release": 2023
             }
         },
@@ -20,15 +20,17 @@
             "id": 2,
             "title": "Black Myth: Wukong",
             "art": false,
-            "rem": 8.1,
+            "rem": 9,
             "image": "https://esports.ch/wp-content/uploads/2024/08/kv-m-1536x1033.jpg",
             "genres": [
-                "shooter"
+                "fantasy",
+                "action",
+                "adventure"
             ],
             "detail": {
-                "information": "lorem ipsum is",
-                "directors": "kojima",
-                "release": 2023
+                "information": "Black Myth: Wukong is an action RPG rooted in Chinese mythology. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past.",
+                "directors": "Wu Cheng'en",
+                "release": 2024
             }
         },
         {
@@ -38,12 +40,14 @@
             "rem": 9,
             "image": "https://images.ctfassets.net/wn7ipiv9ue5v/5JANuwUn7LTdXshdfMUIFD/98a046c496b39c89879b71b70e37c419/RDR_Hero_FPO.jpg",
             "genres": [
-                "shooter"
+                "action",
+                "adventure",
+                "wild west"
             ],
             "detail": {
-                "information": "lorem ipsum is",
-                "directors": "kojima",
-                "release": 2023
+                "information": "Amidst the decline of the Wild West at the turn of the 20th century, outlaw Arthur Morgan and his gang struggle to cope with the loss of their way of life.",
+                "directors": "Dan Houser",
+                "release": 2018
             }
         },
         {
@@ -53,7 +57,8 @@
             "rem": 8.8,
             "image": "https://wallpapers.com/images/high/elden-ring-poster-6r85th0gnhifsqd0.webp",
             "genres": [
-                "shooter"
+                "adventure",
+                "fantasy"
             ],
             "detail": {
                 "information": "In a dark fantasy world created by Hidetaka Miyazaki (Dark Souls) and George R. R. Martin (A Song of Ice and Fire), the player is a Tarnished who is called back to the Lands Between to restore the Elden Ring and become the Elden Lord.",
@@ -68,12 +73,14 @@
             "rem": 7.2,
             "image": "https://sm.ign.com/ign_pk/review/h/hades-2-ea/hades-2-early-access-review_p6z8.jpg",
             "genres": [
-                "shooter"
+                "adventure",
+                "fantasy",
+                "action"
             ],
             "detail": {
-                "information": "lorem ipsum is",
-                "directors": "kojima",
-                "release": 2023
+                "information": "Battle beyond the Underworld using dark sorcery to take on the Titan of Time in this bewitching sequel to the award-winning rogue-like dungeon crawler.",
+                "directors": "Greg Kasavin",
+                "release": 2024
             }
         },
         {
@@ -99,21 +106,6 @@
             "image": "https://fordhamobserver.com/wp-content/uploads/2023/04/maxresdefault.jpeg",
             "genres": [
                 "horror"
-            ],
-            "detail": {
-                "information": "lorem ipsum is",
-                "directors": "kojima",
-                "release": 2023
-            }
-        },
-        {
-            "id": 8,
-            "title": "hades 2",
-            "art": false,
-            "rem": 7.2,
-            "image": "https://sm.ign.com/ign_pk/review/h/hades-2-ea/hades-2-early-access-review_p6z8.jpg",
-            "genres": [
-                "fantasy"
             ],
             "detail": {
                 "information": "lorem ipsum is",

@@ -37,7 +37,7 @@ export default function EntryGameSlider() {
         >
             {
                 gameListSlide?.filter(game => Number(game.id) <= 4).map(item => (
-                    <SwiperSlide className="w-6/12 rounded-lg">
+                    <SwiperSlide className="w-6/12 rounded-lg max-w-[937px]:w-11/12">
                         <div className="relative h-[450px]">
                             <div className="absolute top-0 left-0 text-white bg-[#49494970] rounded-lg">
                                 <IoAddSharp size={50} />
@@ -55,7 +55,7 @@ export default function EntryGameSlider() {
                             <div className="absolute bottom-0 w-full h-28 bg-[#000000a4] text-white px-5 py-2">
                                 <div className="flex items-center justify-between">
                                     <div>
-                                        <h1 className="text-5xl uppercase">{item.title}</h1>
+                                        <h1 className="text-5xl uppercase max-[500px]:text-2xl">{item.title}</h1>
                                         <div className="p-1 mt-2 rounded text-black bg-yellow-600 max-w-fit">
                                             <p><span className="font-extrabold">REM</span> : {item.rem}</p>
                                         </div>

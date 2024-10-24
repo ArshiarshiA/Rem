@@ -1,13 +1,12 @@
 "use client"
 import { ChangeEvent, MouseEvent, useRef, useState } from "react";
-// import logo
 import Image from "next/image";
 import Logo from '@/public/img/igdblogo.png'
-// add icons
 import { FiMenu } from "react-icons/fi";
 import { CiSearch } from "react-icons/ci";
 import { GiGothicCross } from "react-icons/gi";
 import PlayList from "../playList/playlist";
+import LoginIcon from "../loginIcon/loginIcon";
 
 
 export default function Header() {
@@ -34,7 +33,7 @@ export default function Header() {
                         <p className="text-xl">MENU</p>
                         <FiMenu />
                     </div>
-                    <div className="w-7/12 relative">
+                    <div className="w-7/12 relative max-[571px]:hidden">
                         <input ref={inputes} onChange={checkIsTexted} type="text" placeholder="search your fav game..." className="rounded-lg p-2 w-full bg-gray-500 outline-none" />
                         <CiSearch className="absolute right-2 top-2 size-6" />
                         {checkIsEmpty && (
@@ -42,6 +41,7 @@ export default function Header() {
                         )}
                     </div>
                     <PlayList />
+                    <LoginIcon />
                 </div>
             </div>
         </nav>

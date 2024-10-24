@@ -22,7 +22,7 @@ export default function Genres() {
                 </div>
                 <GenreSection title="shooter" selectedGenre="shooter" />
                 <GenreSection title="horror" selectedGenre="horror" />
-                <GenreSection title="shooter" selectedGenre="shooter" />
+                <GenreSection title="fantasy" selectedGenre="fantasy" />
                 <GenreSection title="shooter" selectedGenre="shooter" />
                 <GenreSection title="shooter" selectedGenre="shooter" />
                 <GenreSection title="shooter" selectedGenre="shooter" />

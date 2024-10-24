@@ -18,9 +18,9 @@ export default function DirectorSlider() {
     let directors = useFetch('directors')
 
     return (
-        <div className="flex flex-col gap-5">
-            {directors?.map(item => (
-                <div key={item.id} className="flex gap-3 text-white">
+        <div className="flex max-[938px]:flex-wrap flex-col max-[938px]:flex-row">
+            {directors?.map((item) => (
+                <div key={item.id} className="flex gap-3 py-3 max-[938px]:w-6/12 max-[718px]:w-full text-white">
                     <div className="w-4/12 h-44">
                         <img className="object-cover rounded-sm w-full h-full" src={item.image} alt="" />
                     </div>

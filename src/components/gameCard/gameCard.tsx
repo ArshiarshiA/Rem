@@ -15,7 +15,7 @@ export default function GameCard({id , art, image, rem, title }: gameCardProps) 
     return (
         <div>
             <div>
-                <img className="w-full h-[200px] object-cover" src={image} alt="" />
+                <img className="w-full h-[280px] object-cover" src={image} alt="" />
                 {art && (
                     <div className="absolute top-0 right-0 flex items-center justify-center bg-green-500 w-9 h-9 rounded-lg">
                         <Tooltip title='GAME IS ART' >

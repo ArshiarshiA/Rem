@@ -12,11 +12,11 @@ export default function NotFound() {
                         <div className="absolute -top-10 -right-5 w-10 h-10 rounded-full border"></div>
                     </div>
                     <h1 className="absolute text-white w-full text-center -top-[123px] text-9xl">404</h1>
-                    <div className="absolute right-20 top-5 w-20 h-20 rounded-full border-2">
+                    <div className="absolute right-20 top-5 w-20 h-20 rounded-full">
                         <div className="absolute right-10 -top-1 w-[2px] h-20 bg-yellow-600 rotate-45"></div>
                         <div className="absolute left-10 -top-1 w-[2px] h-20 bg-yellow-600 -rotate-45"></div>
                     </div>
-                    <div className="absolute left-20 top-5 w-20 h-20 rounded-full border-2">
+                    <div className="absolute left-20 top-5 w-20 h-20 rounded-full">
                         <div className="absolute right-10 -top-1 w-[2px] h-20 bg-yellow-600 rotate-45"></div>
                         <div className="absolute left-10 -top-1 w-[2px] h-20 bg-yellow-600 -rotate-45"></div>
                     </div>

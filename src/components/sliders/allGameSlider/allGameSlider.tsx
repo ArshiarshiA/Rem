@@ -18,7 +18,15 @@ export default function AllGameSlider() {
 
     return (
         <Swiper
-            slidesPerView={5}
+            slidesPerView={2}
+            breakpoints={{
+                1000:{
+                    slidesPerView: 5
+                },
+                600:{
+                    slidesPerView: 3
+                }
+            }}
             spaceBetween={20}
         >
             {allGames?.filter(game => game.id <= 15).map(
