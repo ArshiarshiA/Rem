@@ -1,14 +1,14 @@
 "use client"
 import useFetch from "@/src/hook/useFetch"
 import Link from "next/link"
-import DetailGameCard from "@/src/components/detailGameCard/detailGameCard"
+import DetailGameCard from "@/src/app/games/[game]/component/detailGameCard"
 
 export default function FilterGame({ uniqueId }: { uniqueId: string }) {
 
     let SelectedGame = useFetch('EntryGames')
 
     return (
-        <div className="text-white flex justify-center">
+        <div className="text-white flex justify-center max-[939px]:flex-col">
             {
                 SelectedGame?.filter(game => game.id == uniqueId)
                     .map(filteredGame => (

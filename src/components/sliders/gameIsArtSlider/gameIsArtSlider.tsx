@@ -39,10 +39,10 @@ export default function GameIsArtSlider() {
                                 <div className="py-9">
                                     <div className="text-white uppercase">
                                         <img className="w-52 h-52 object-cover rounded-full max-[500px]:rounded-xl max-[500px]:w-full" src={art.image} alt="" />
-                                        <div className="text-center pt-3">
+                                        <div className="pt-3">
                                             <h1>{art.title}</h1>
                                         </div>
-                                        <div className="px-5 pt-2">
+                                        <div className="pt-2">
                                             <div className="bg-yellow-600 px-2 rounded-full text-black w-fit">
                                                 Rem : {art.rem}
                                             </div>

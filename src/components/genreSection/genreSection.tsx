@@ -41,7 +41,18 @@ export default function GenreSection({ title, selectedGenre }: IGameGenreType) {
             </Link>
             <div>
                 <Swiper
-                    slidesPerView={5}
+                    slidesPerView={1}
+                    breakpoints={{
+                        1065: {
+                            slidesPerView: 4
+                        },
+                        700: {
+                            slidesPerView: 3
+                        },
+                        524: {
+                            slidesPerView: 2
+                        }
+                    }}
                     spaceBetween={20}
                 >
                     {allGames?.filter(game => game.genres[game.genres.findIndex(genre => genre === selectedGenre)] === selectedGenre)

@@ -19,8 +19,8 @@ interface IDgameCard {
 export default function DetailGameCard({ art, title, image, rem, children, directors, information, release }: IDgameCard) {
     return (
         <>
-            <div className="w-1/3">
-                <div className="relative">
+            <div className="w-1/4 max-[939px]:w-full">
+                <div className="relative max-[939px]:px-5">
                     <img className="w-full h-[500px] object-cover rounded-lg" src={image} alt="" />
                     {art && (
                         <div className="absolute top-0 right-0 flex items-center justify-center bg-green-500 w-9 h-9 rounded-lg">
@@ -32,12 +32,12 @@ export default function DetailGameCard({ art, title, image, rem, children, direc
                         </div>
                     )}
                 </div>
-                <div className="flex justify-between py-5">
+                <div className="flex justify-between py-5 max-[939px]:px-4">
                     <button className="flex items-center gap-2 bg-[#68686857] px-5 py-1 rounded-full">Add To Your List <CiBookmark className="cursor-pointer" size={25} /></button>
                     <span className="flex items-center gap-1"><CiStar size={25} className="text-yellow-600" /> {rem}</span>
                 </div>
             </div>
-            <div className="w-1/2 max-h-[500px] px-5 flex flex-col justify-between">
+            <div className="w-1/2 max-[939px]:w-full max-h-[500px] px-5 flex flex-col justify-between">
                 <div>
                     <div className="border-b pb-2">
                         <h1 className="text-3xl capitalize">{title}</h1>
