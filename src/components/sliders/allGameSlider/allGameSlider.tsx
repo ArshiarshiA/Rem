@@ -7,7 +7,7 @@ import axios from "axios";
 
 export default function AllGameSlider() {
 
-    let [allGames, setAllGames] = useState<gamesObgData[] | null>(null)
+    const [allGames, setAllGames] = useState<gamesObgData[] | null>(null)
 
     useEffect(() => {
         axios
@@ -31,7 +31,7 @@ export default function AllGameSlider() {
         >
             {allGames?.filter(game => game.id <= 15).map(
                 filteredGame => (
-                    <SwiperSlide className="border border-[#cecece2d]">
+                    <SwiperSlide key={filteredGame.id} className="border border-[#cecece2d]">
                         <GameCard {...filteredGame} />
                     </SwiperSlide>
                 )

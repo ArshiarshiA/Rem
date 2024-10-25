@@ -17,14 +17,14 @@ interface allGamesData {
     title: string,
     image: string,
     rem: number,
-    genres: any[]
+    genres: string[]
 }
 
 type allGamesType = allGamesData[]
 
 export default function GenreSection({ title, selectedGenre }: IGameGenreType) {
 
-    let [allGames, setAllGames] = useState<allGamesType | null>(null)
+    const [allGames, setAllGames] = useState<allGamesType | null>(null)
 
     useEffect(() => {
         axios
@@ -57,7 +57,7 @@ export default function GenreSection({ title, selectedGenre }: IGameGenreType) {
                 >
                     {allGames?.filter(game => game.genres[game.genres.findIndex(genre => genre === selectedGenre)] === selectedGenre)
                         .map(filteredGame => (
-                            <SwiperSlide>
+                            <SwiperSlide key={filteredGame.id}>
                                 <div>
                                     <img className="h-[300px] object-cover object-center rounded-xl" src={filteredGame.image} alt="" />
                                     <div className="py-3">

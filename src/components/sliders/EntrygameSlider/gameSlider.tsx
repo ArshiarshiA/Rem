@@ -1,6 +1,4 @@
 "use client"
-import axios from "axios";
-import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { PiPaintBrush } from "react-icons/pi";
@@ -21,11 +19,9 @@ export interface gamesObgData {
     rem: number
 }
 
-type gamesArray = gamesObgData[]
-
 export default function EntryGameSlider() {
 
-    let gameListSlide = useFetch('EntryGames')
+    const gameListSlide = useFetch('EntryGames')
 
     return (
         <Swiper
@@ -37,7 +33,7 @@ export default function EntryGameSlider() {
         >
             {
                 gameListSlide?.filter(game => Number(game.id) <= 4).map(item => (
-                    <SwiperSlide className="w-6/12 rounded-lg max-w-[937px]:w-11/12">
+                    <SwiperSlide key={item.id} className="w-6/12 rounded-lg max-w-[937px]:w-11/12">
                         <div className="relative h-[450px]">
                             <div className="absolute top-0 left-0 text-white bg-[#49494970] rounded-lg">
                                 <IoAddSharp size={50} />

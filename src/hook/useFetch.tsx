@@ -16,11 +16,13 @@ interface IGT {
     art?: boolean
     genres?: string[]
     detail?: IDetailT
+    name?: string
+    fieldes: string[]
 }
 
 export default function useFetch(url: string) {
 
-    let [data, setData] = useState<null | IGT[]>(null)
+    const [data, setData] = useState<null | IGT[]>(null)
 
     useEffect(() => {
         axios

@@ -5,8 +5,8 @@ import { useRouter } from "next/navigation";
 
 export default function LoginIcon() {
 
-    let usernameCookie = document.cookie?.split('=')[1]
-    let router = useRouter()
+    const usernameCookie = document.cookie?.split('=')[1]
+    const router = useRouter()
 
     const deleteUser = () => {
         document.cookie = `username=${usernameCookie}; expires=Thu, 18 Dec 1970 12:00:00 UTC`

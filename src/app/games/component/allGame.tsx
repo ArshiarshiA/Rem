@@ -7,12 +7,12 @@ import { PiPaintBrush } from "react-icons/pi"
 
 export default function AllGame() {
 
-    let allGamesPage = useFetch('EntryGames')
+    const allGamesPage = useFetch('EntryGames')
 
     return (
         <div className="flex justify-center flex-wrap">
             {allGamesPage?.map(game => (
-                <div className="border-b border-gray-500 w-full min-[589px]:w-6/12 min-[840px]:w-3/12 p-5">
+                <div key={game.id} className="border-b border-gray-500 w-full min-[589px]:w-6/12 min-[840px]:w-3/12 p-5">
                     <div className="relative">
                         <img className="h-[150px] w-full object-cover rounded-lg" src={game.image} alt="" />
                         {game.art && (

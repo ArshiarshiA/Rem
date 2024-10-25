@@ -1,5 +1,5 @@
 "use client"
-import { ChangeEvent, MouseEvent, useRef, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import Image from "next/image";
 import Logo from '@/public/img/igdblogo.png'
 import { FiMenu } from "react-icons/fi";
@@ -11,14 +11,18 @@ import LoginIcon from "../loginIcon/loginIcon";
 
 export default function Header() {
 
-    let inputes = useRef<HTMLInputElement>(null)
+    const [inputValue, setInputValue] = useState<string>('')
 
-    let [checkIsEmpty, SetCheckIsEmpty] = useState<boolean>(false)
+    const [checkIsEmpty, SetCheckIsEmpty] = useState<boolean>(false)
 
-    const checkIsTexted = (e: ChangeEvent<HTMLInputElement>) => e.target.value.length > 0 ? SetCheckIsEmpty(true) : SetCheckIsEmpty(false)
+    const checkIsTexted = (e: ChangeEvent<HTMLInputElement>) => {
+        setInputValue(e.target.value)
+        if(e.target.value.length > 0) SetCheckIsEmpty(true)
+        else SetCheckIsEmpty(false)
+    }
 
-    const clearInput = (e: MouseEvent<SVGElement, globalThis.MouseEvent>) => {
-        inputes.current.value = ''
+    const clearInput = () => {
+        setInputValue('')
         SetCheckIsEmpty(false)
     }
 
@@ -34,7 +38,7 @@ export default function Header() {
                         <FiMenu />
                     </div>
                     <div className="w-7/12 relative max-[571px]:hidden">
-                        <input ref={inputes} onChange={checkIsTexted} type="text" placeholder="search your fav game..." className="rounded-lg p-2 w-full bg-gray-500 outline-none" />
+                        <input value={inputValue} onChange={checkIsTexted} type="text" placeholder="search your fav game..." className="rounded-lg p-2 w-full bg-gray-500 outline-none" />
                         <CiSearch className="absolute right-2 top-2 size-6" />
                         {checkIsEmpty && (
                             <GiGothicCross onClick={clearInput} className="absolute right-10 cursor-pointer top-2 size-6 transition-all" />

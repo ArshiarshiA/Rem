@@ -2,20 +2,10 @@
 import Link from 'next/link';
 import useFetch from '@/src/hook/useFetch';
 
-interface directorsData {
-    id: number
-    name: string,
-    image: string,
-    fieldes: string[],
-    born: string,
-    work: string[]
-}
-
-type directorsArray = directorsData[]
 
 export default function DirectorSlider() {
 
-    let directors = useFetch('directors')
+    const directors = useFetch('directors')
 
     return (
         <div className="flex max-[938px]:flex-wrap flex-col max-[938px]:flex-row">
@@ -29,7 +19,7 @@ export default function DirectorSlider() {
                             <h1 className="text-lg uppercase border-l border-l-yellow-600 pl-1">Name : {item.name}</h1>
                             <div className="flex gap-5">
                                 {item.fieldes.map(field => (
-                                    <div>
+                                    <div key={field}>
                                         <p className="text-gray-400 border-b border-b-yellow-600">{field}</p>
                                     </div>
                                 ))}

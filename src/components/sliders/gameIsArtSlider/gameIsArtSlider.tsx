@@ -4,11 +4,10 @@ import { gamesObgData } from "../EntrygameSlider/gameSlider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import axios from "axios";
 import Link from "next/link";
-import { Autoplay } from 'swiper/modules'
 
 export default function GameIsArtSlider() {
 
-    let [artGames, setArtGames] = useState<null | gamesObgData[]>(null)
+    const [artGames, setArtGames] = useState<null | gamesObgData[]>(null)
 
     useEffect(() => {
         axios
@@ -34,7 +33,7 @@ export default function GameIsArtSlider() {
             {
                 artGames?.filter(item => item.art === true)
                     .map(art => (
-                        <SwiperSlide>
+                        <SwiperSlide key={art.id}>
                             <Link href={`/games/${art.id}`}>
                                 <div className="py-9">
                                     <div className="text-white uppercase">

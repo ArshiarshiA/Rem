@@ -2,15 +2,6 @@ import GenreSection from "@/src/components/genreSection/genreSection";
 import Image from "next/image";
 import allGenreBackground from '@/public/img/allGameGenre.jpg'
 
-interface allGamesData {
-    id: number,
-    title: string,
-    image: string,
-    rem: number,
-    genres: any[]
-}
-
-type allGamesType = allGamesData[]
 
 export default function Genres() {
     return (
